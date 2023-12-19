@@ -42,6 +42,7 @@ $conn->close();
                 if ($result->num_rows > 0) {
                     $counter = 1;
                     while ($row = $result->fetch_assoc()) {
+                        $id = $row['id'];
                         $totalHarga += $row["harga"];
                         $totalBerat += $row["berat"];
                 ?>

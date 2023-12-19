@@ -23,6 +23,7 @@
                 <span>
                     <a href="dashboard.php">DASHBOARD</a>
                     <a href="preorder_produk.php">INFORMASI PRODUK</a>
+                    <a href="form_penjualan.php">PENJUALAN SAMPAH</a>
                 </span>
                 <span>
                     <button onclick="window.location.href = 'logout.php'">LOGOUT</button>

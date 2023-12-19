@@ -48,7 +48,7 @@ if (!isset($_SESSION['login'])) {
                     <span>
                         <p>Jenis Sampah</p>
                         <select name="jenis" id="" style="width : 150px">
-                            <option value="palstik">PLASTIK</option>
+                            <option value="plastik">PLASTIK</option>
                             <option value="logam">LOGAM</option>
                             <option value="besi">BESI</option>
                             <option value="kaca">KACA</option>
@@ -77,7 +77,7 @@ if (!isset($_SESSION['login'])) {
                         </div>
                         <span class="d-flex" style="justify-content: right;">
                             <button type="button">BATAL</button>
-                            <button type="submit">KIRIM</button>
+                            <button type="submit" onclick="window.location.href='riwayat_sampah.php'">KIRIM</button>
                         </span>
                     </div>
                 </section>
@@ -98,15 +98,17 @@ if (!isset($_SESSION['login'])) {
             var hargaPerKg = 0;
 
             switch (jenisSampah.value) {
-                case 'palstik':
-                    hargaPerKg = 1300;
+                case 'plastik':
+                    hargaPerKg = 2400;
                     break;
                 case 'besi':
+                    hargaPerKg = 2000;
+                    break;
                 case 'logam':
-                    hargaPerKg = 3000;
+                    hargaPerKg = 1500;
                     break;
                 case 'kaca':
-                    hargaPerKg = 2000;
+                    hargaPerKg = 3000;
                     break;
                 default:
                     hargaPerKg = 0;
